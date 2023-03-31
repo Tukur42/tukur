@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   {# <link rel="stylesheet" href="style.css">#}
+</head>
+<body>
+    <header class="shadow sticky-top">
+        <img src="{{ asset('images/logo.png') }}" alt="Logo" class="logo">
+    {#  <h3 class="doc">CERT NATIONALE DE LA GUINEE EQUATORIALE</h3> #}
+        <nav>
+            <ul>
+               {# <li><a href="#">Accueil</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>#}
+                {#<button type="button" class="btn btn-primary">Creer</button>
+                 <button class="btn btn-outline-success " type="submit">Creer Compte</button> 
+                {#<input class="form-control " type="search" placeholder="Chercher un incident" aria-label="Search"> #}
+                {% if app.user %}
+                <li><a href='{{path('app_logout')}}'><button class="btn btn-outline-danger " type="submit">Se deconnecter</button></a>
+                 <a href='{{path('app_home')}}'><button class="btn btn-outline-success " type="submit">Tableau de bord</button></a>
+                </li>
+                   
+                {% else %}
+                    <li><a href='{{path('app_register')}}'><button class="btn btn-outline-success " type="submit">S'inscrire</button></a>   </li>
+                    <li>
+                        <a href='{{path('app_login')}}'><button class="btn btn-outline-success " type="submit">Se connecter</button></a> 
+                    </li>
+                {% endif %}
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h5 class="sous_tittre">À propos</h5>
+            <p >Le CERT National est une organisation qui travaille pour la sécurité informatique en Guinee Equatoriale.</p>
+           <p> RÔLE ET MISSION </p>
+           
+<p>Les tâches prioritaires d’un CERT (Computer Emergency Response Team) sont les suivantes :
+
+centralisation des demandes d’assistance suite aux incidents de sécurité (attaques) sur les réseaux et les systèmes d’informations : réception des demandes, analyse des symptômes et éventuelle corrélation des incidents ;
+traitement des alertes et réaction aux attaques informatiques : analyse technique, échange d’informations avec d’autres CERT, contribution à des études techniques spécifiques ;
+établissement et maintenance d’une base de donnée des vulnérabilités ;
+prévention par diffusion d’informations sur les précautions à prendre pour minimiser les risques d’incident ou au pire leurs conséquences ;
+coordination éventuelle avec les autres entités (hors du domaine d’action) : centres de compétence réseaux, opérateurs et fournisseurs d’accès à Internet, CERT nationaux et internationaux.
+Il est également courant d’utiliser l’acronyme CSIRT, signifiant Computer Security Incident Response Team.</p>
+        </section>
+        <section>
+            <h2 class="sous_tittre">Services</h2>
+            <ul>
+                <li><a href="#">Assistance en cas d'incident</a></li>
+                <li><a href="#">Formation à la sécurité informatique</a></li>
+                <li><a href="#">Veille sur les menaces informatiques</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="sous_tittre">Contact</h2>
+            <p>Pour nous contacter, envoyez un email à <a href="mailto:contact@cert-national.fr">contact@certge.ge</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>CERT-G.E &copy; 2023</p>
+    </footer>
+</body>
+</html>

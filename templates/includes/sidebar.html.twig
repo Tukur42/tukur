@@ -1,0 +1,120 @@
+  <div class="sidebar">
+      <img src="{{ asset('images/logo.png') }}" alt="Logo" class="logo">
+      <h6 class='text-center text-primary fw-bold'>{{app.user.prenom}} {{app.user.nom}}</h6> 
+    <ul class="sidebar-menu" "p-3 mb-2 bg-info text-white">
+    
+      <li><a href="#">Accueil</a></li> 
+
+      
+      <li><a href="#">Services</a></li>
+
+      
+      <li><a href="#">Evenement</a></li>
+    
+
+  
+      <li><a href="#">Indident</a></li>
+
+     
+      <li><a href="#">Incidents Traites</a></li>
+
+   
+      <li><a href="#">Sujet</a></li>
+
+     
+      <li><a href="#">Categorie</a></li> 
+
+      
+      <li><a href="#">Organisme</a></li>
+
+     
+      <li><a href="#">Vulnerabilite</a></li>
+
+      
+     {# <li><a href="#">Compte</a></li>#}
+
+
+      <li><a href="#">Alerte</a></li>
+
+   
+      <li><a href="#">utilisateur</a></li>
+    </ul>
+  </div>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">CERT-G.E</a>
+  {# <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> #}
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Accueil<span class="sr-only">  </span></a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">Retour</a>
+      </li>
+      {#<li class="nav-item">
+        <a class="nav-link" href="#">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Calendrier</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">lois</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">a propos de nous</a>
+      </li>#}
+
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Recherche</a>
+      </li>
+      
+  
+    <input class="form-control " type="search" placeholder="incident" aria-label="Search">
+    <button class="btn btn-outline-success " type="submit">chercher</button>
+    
+    </ul>
+    
+  </div>
+  <form class="f" >
+    {#<button type="button" class="btn btn-primary">Creer</button>#}
+    <button class="btn btn-outline-success " type="submit">Mon Compte</button>
+    {#<input class="form-control " type="search" placeholder="Chercher un incident" aria-label="Search">#}
+  </form>
+    <a href='{{path('app_logout')}}'><button class="btn btn-outline-danger " type="submit">Se deconnecter</button>
+</nav>
+
+{# <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class=" navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav right">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Accueil</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="#">Calendrier</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">se connecter</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">creer compte</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">contact</a>
+      </li>
+    </ul>
+
+  </div>
+</nav> #}
